@@ -9,20 +9,20 @@ output:
 Hi, My name is Yongzi. This website is about my resume.
 
 ## Education
-Columbia University
+Columbia University  
 MS in Biostatistics
 
-University of California, Irvine
+University of California, Irvine  
+Bachelor of Science in Biology
 
-## Working Experience  
-# Johnson and Johnson, Medical Device Department
-Health Economic and Market Access Intern  
+## Work Experience  
+Johnson and Johnson, Medical Device Department, Health Economic and Market Access Intern    4/2021-8/2021  
 -  Performed literature search using relevant search engines e.g. PubMed to collect clinical and scientific data for real-world evidence (RWE)    
 -  Worked in tailoring health economics and outcomes research models ( including Cost-Effectiveness Model, Decision Tree Model, Budget Impact Model, etc.) to support market access in China    
 -  Applied statistical methods to analyze and interpret patient data and did data clean to provide user-friendly data tables using R (R Markdown, ggplots, etc.)    
 -  Worked closely with Sales/Marketing/Strategical Key Account/Government Affairs team to participate in global projects and wrote pitch deck to support access and value communication    
 
-# Pfizer, R&D Center Shanghai, China Junior Clinical Data Analyst 5/2020-4/2021
+Pfizer, R&D Center Shanghai, China Junior Clinical Data Analyst   5/2020-4/2021  
 - Reviewed data and send queries to ensure the clinical trial data quality using Excel (pivot table, vlookup, etc.)  
 - Streamlined the workflow and improved the efficiency by 50% for the team utilizing SQL  
 - Designed Case Report From (CRF) of clinical trial and wrote data development plan (DMP) by following protocol  
