@@ -1,0 +1,52 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    vertical_layout: fill
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+```{r}
+ins = data(instacart)
+ins=
+  instacart%>%
+  janitor::clean_names()
+```
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+```{r}
+ins %>%
+  group_by(department) %>%
+  summarise(
+    count=n()
+  ) %>%
+  mutate(department=fct_reorder(department,count)) %>%
+   plot_ly(x = ~department, y = ~count, color = ~department, type = "bar", colors = "viridis")
+```
+Column {data-width=350}
+### Chart B
+```{r}
+ins %>%
+  filter(department=="produce"|department=="dairy eggs") %>%
+  mutate(
+    aisle = fct_reorder(aisle,order_hour_of_day)) %>% 
+ plot_ly(y = ~order_hour_of_day, color = ~aisle, type = "box", colors = "viridis")
+```
+### Chart C
+```{r}
+a=ins %>%
+  group_by(department,order_hour_of_day) %>%
+  summarise(
+    count=n()
+  )%>%
+plot_ly(y=~order_hour_of_day,x=~count,color=~department,type="scatter")
+a
+```
